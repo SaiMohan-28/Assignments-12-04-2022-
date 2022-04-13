@@ -17,7 +17,7 @@ void *myfun()//Thread Handling Function
 int main()
 {
 	pthread_t newthread;
-	pthread_create(&newthread,NULL,&myfun,NULL);
-	pthread_join(newthread,NULL);
+	pthread_create(&newthread,NULL,&myfun,NULL);//creating thread (thread Id,NULL,fun name ,parametrs)
+	pthread_join(newthread,NULL);//joining thread (threda id ,NULL)
 	return 0;
 }
